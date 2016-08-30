@@ -78,3 +78,27 @@ Dont know
 What?
 We need a costFunction that would return (Cost,Gradient) at each iteration.
 
+
+Overfitting:
+Increasing number of features will result in incorrect prediction.
+
+	Fix for Overfit:
+	Reduce number of features
+		Manually select which features to keep
+		Model Selection Algorithm
+	Regularization:
+		Reduce the maginitude of øj (Works well when we have lots of features , all contrbuting a bit to y)
+
+
+
+What am I looking for?
+--> Something to map multiple features to one answer, such that when i ask for any one of the features, it should be able to identify the one in subset and get the answer..
+
+I am hoping getting into detail of one of the algo's will help me drill that down..
+
+Naive Bayes Algorithm:
+It has multiple variations
+Multinominal: when the multiple occurrences of the words matter a lot in the classification problem--Where does this belong..Topic classification
+Binarized Multinomial Naive Bayes is used when the frequencies of the words don’t play a key role in our classification.--Movie Review
+
+Naive Bayes isn;t what we really need. It has the basic assumption that we are mapping it to class!
