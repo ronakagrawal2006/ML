@@ -5,8 +5,6 @@ y is the actual value
 h(ø) depends on ø1, ø2,....øn all the parameters that the hypothesis should depend on.
 x is the input feature of the training set.
 
-
-
 we want to our prediction and actual value in training set to be same. i.e. the difference between the prediction and actual correct value to be minimum(ideally 0)
 so we want h(ø) ~ y i.e. h(ø) - y ~ 0
 i.e. min of [h(ø)-y]----------------equation 1
@@ -81,7 +79,6 @@ We need a costFunction that would return (Cost,Gradient) at each iteration.
 
 Overfitting:
 Increasing number of features will result in incorrect prediction.
-
 	Fix for Overfit:
 	Reduce number of features
 		Manually select which features to keep
@@ -102,3 +99,14 @@ Multinominal: when the multiple occurrences of the words matter a lot in the cla
 Binarized Multinomial Naive Bayes is used when the frequencies of the words don’t play a key role in our classification.--Movie Review
 
 Naive Bayes isn;t what we really need. It has the basic assumption that we are mapping it to class!
+
+
+
+Unsupervised learning:
+Clustering: Identification of Clusters(sets of data with similar pattern)
+
+K mean algorithm- split data into k clusters.
+Process: Randomly initialize a k points, Color them as per lowest distance; update k to go to centriod of cluster; repeat
+Issues: Can go to local maxima.
+Solution: Repeat random initialization of k centriods, have multiple outputs, get the one with lowest cost!
+Lowest Cost: distance b/w centroid and other points of that cluster, for all clusters
